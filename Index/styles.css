@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+
+}
+
+.ankara{
+    background: #010505;
+    min-height: 100vh;
+    width: 100%;
+    color: #eee;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 10%;
+}
+nav .ankara-image{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .ankara-logo{
+    width: 160px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: -40px;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    animation-name: move-nav-bar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #eee;
+    background: red;
+    padding:0.5rem 0.8rem;
+    border-radius: 5px;
+
+}
+nav ul a:hover,
+nav li a:active{
+    color: rgb(194, 8, 8);
+    background: #eee;
+    padding:0.5rem 0.8rem;
+    border-radius: 5px; 
+    
+}
+button{
+    background: #fefefe;
+    height: 30px;
+    width: 60px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: rgb(221, 63, 1);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s ;
+}
+.ankara-lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+
+}
+.lamp{
+    width: 100%;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.ankara-text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.ankara-text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.ankara-text-container a{
+    text-decoration: none;
+    background: #008646;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #eee;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #eee;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50px;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #008646;
+    display: block;
+}
+
+.active{
+    background: rgb(62, 240, 8);
+}
+
+.active span{
+    background: #eee;
+    margin-left: 31px;
+}
+
+.on{
+    opacity: 1;
+}
+@keyframes move-nav-bar {
+   from{
+       transform: translateY(0.2rem);
+       }
+   to{
+       transform: translateY(1rem);
+       color: tan;
+       transition: ease-out;
+   } 
+}

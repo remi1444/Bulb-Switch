@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href" type="image/x-icon">
+    <title>Bulb Switch</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="../Image/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+<div class="ankara">
+  <nav>
+      <img src="../Image/menu.png" alt="menu" class="ankara-image">
+      <img src="../Image/logo.png" alt="logo" class="ankara-logo">
+      <ul>
+          <li> <a href=""> African Ankara</a> </li>
+          <li> <a href="">Ankara Affordable</a> </li>
+          <li> <a href="">Ankara Lamp</a> </li>
+          <li> <a href="">Ankara For Spotlight</a> </li>
+      </ul>
+      <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+  </nav>
+
+  <div class="ankara-lamp-container">
+
+<img src="../Image/lamp.png" alt="lamp" class="lamp">
+<img src="../Image/light.png" alt="light" class="light" id="light">
+  </div>
+  <div class="ankara-text-container">
+<h1>African Lamp</h1>
+<br>
+<p>Africa Ankara is our prototype African made lamp for the african terrain.
+</p>
+<a href="">Check Out Other Products</a>
+<div class="control">
+    <p>04</p>
+    <div class="line"><span></span></div>
+    <p>05</p>
+</div>
+  </div>
+</div>
+
+<script>
+    let btn = document.getElementById("btn");
+    let light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active")
+        light.classList.toggle("on")
+    }
+</script>
+</body>
+</html>
